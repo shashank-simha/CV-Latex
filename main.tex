@@ -1,0 +1,144 @@
+\documentclass[10pt,a4paper,ragged2e,normalphoto]{template}
+
+% Change the page layout if you need to
+\geometry{left=0cm,right=0cm,marginparwidth=0cm,marginparsep=1.2cm,top=2cm,bottom=2cm}
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[sfdefault]{arimo}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{1b1d20}
+\definecolor{SlateGrey}{HTML}{444445}
+\definecolor{LightGrey}{HTML}{333333}
+\definecolor{DarkGrey}{HTML}{3a3d4a}
+\definecolor{White}{HTML}{ffffff}
+\definecolor{PaleGrey}{HTML}{333c4d}
+\definecolor{SlateBlue}{HTML}{3c2eb1}
+
+
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\colorlet{highlighter}{DarkGrey}
+\colorlet{headingwhite}{White}
+\colorlet{line}{PaleGrey}
+\colorlet{link}{SlateBlue}
+
+\begin{document}
+
+\name{Shashank Simha M R}
+\tagline{Tech-Enthusiast}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%   \photo{4cm}{profile.jpeg}
+\personalinfo{%
+  % You can add your own with \printinfo{symbol}{detail}
+   \email{shashank.simha@ieee.org}
+   \phone{+91 9482038408}
+%  \mailaddress{Address, Street, 00000 County}
+%  \location{Ulsan, South Korea}
+   \github{github.com/shashank-simha}
+    \homepage{simha.me}
+%  \twitter{@marissamayer}
+   \linkedin{linkedin.com/in/shashank-simha}
+}
+
+\newgeometry{left=0cm,right=0cm,marginparwidth=0cm,marginparsep=1.2cm,top=0cm,bottom=2cm}
+\afterpage{\aftergroup\restoregeometry}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+% \begin{changemargin}{1.25cm}{1.25cm}
+
+\summary{A tech-enthusiast currently pursuing Bachelors in Electronics and Communication Engineering. Interested in the field of Internet of Things and embedded systems. Also have good knowledge in developing websites and android applications.
+\\\medskip Actively looking for opportunities for Research and Internships in the field of Embedded Systems, Internet of Things and Robotics.}
+
+%experience section
+\cvsection{Experience}
+
+\cvevent{Jun 2019 -- Aug 2019}{Summer Research Intern}{Indian Institute of Science (IISc)}{{Worked on Implementation of Trilateration algorithm (based on RSSI) on TI-RSLK.}{Developed a self localizing robot using Robot System Learning Kit and Zigbee module.}{Successfully demonstrated the project in TI-RSLK(Max) Launch event.}{}{}}
+
+\cvevent{May 2019 -- present}{Hub Incharge - Mysore}{IEEE Bangalore Section SAC}{{Working as Webmaster for SYWL Congress 2019.}{Coordinating Website Task force of IEEE Bangalore Section.}{}{}{}}
+
+\cvevent{Apr 2018 -- present}{Student Coordinator}{IEEE India Council}{{Been a part of Webinars and Online Training team.}{Leading team of 5 members, for developing the official website for AISYWC'19.}{}{}{}}
+
+\cvevent{Jun 2018 -- May 2019}{Vice-Chairperson}{NIE IEEE Student Branch}{{Led a team of 13 members, organizing over 70 events and 4 technical fests.}{Developed 2 Android apps and a Website for Events and Fests.}{Worked as the Website lead for AISYWC'18}{}{}}
+%end experience section
+
+%education section
+\cvsection{Education}
+
+\cvevent{Aug 2016 -- present}{The National Institute of Engineering}{Bachelor Degree}{{Major: Electronics and Communication}{CGPA: 9.05 (6 semesters)}{}{}{}}
+
+\cvevent{Jul 2014 -- Apr 2016}{Maharaja's P.U. College}{11th and 12th}{{12th Score: 92.50\%}{}{}{}{}}
+
+\cvevent{Jun 2011 -- Apr 2014}{J S S High School}{Matriculation}{{10th Score: 92.80\%}{}{}{}{}}
+%end education section
+
+%skill section
+\cvsection{Skills \& Abilities}
+
+\customskills{Embedded Systems}{{Microcontrollers and Microprocessors: 8051, x86, Atmega, Arduino,
+ESP 8266, ESP 32, Raspberry Pi, MSP430, MSP432 etc.}{4}}
+{{Programming Languages and Tools: Assembly, Embedded C, MATLAB, Arduino, MicroPython, Keil uVision, CCS}{4}}
+{{Kernel Programming, Shell Scripting Robot Operating System(ROS) and Real Time Operating
+Systems(RTOS)}{2}}
+{{Communication Protocols}{4}}
+{{Sensors, Actuators and Peripheral hardware}{4}}
+{{Electronic Circuit Board (or PCB) design and troubleshooting}{2}}
+{}{}
+
+\customskills{Computer Programming}{{Programming Languages: C, C++, Python, PHP}{4}}
+{{Full Stack Web Development}{4}}
+{{Databases: MySQL, MongoDB, PostgreSQL, Firebase}{3}}
+{{Frame works: Laravel, Flask, Bootstrap}{3}}
+{{Android Development}{3}}
+{{Computer Networks (IP Networking)}{3}}
+{}{}
+%end skill section
+
+%project section
+\cvsection{Projects}
+
+\project{Dec 2017}{QM solver}{A command line application(written in python) to find minimal expressions for digital circuits by implementing Quine Mcclusky Algorithm.}{https://github.com/shashank-simha/QuineMccluskey}
+
+\project{May 2018 -- June 2018}{NIE Summer of Code (Projects on ESP 32)}{Projects like Web server, Bluetooth SD card reader, Remote Temperature logger, OTA, Web Client, etc. built using ESP 32 and SD card module.}{https://github.com/shashank-simha/NSoC5.0}
+
+\project{Dec 2018 -- Feb 2018}{FreeRTOS Projects}{Implementation of various features of FreeRTOS on ESP32 microcontroller.}{https://github.com/shashank-simha/FreeRTOS-Projects}
+
+\project{Aug 2018}{Presenter}{Android app for remotely controlling presentations built using RevealJS (Integrated with Google Firebase).}{https://github.com/shashank-simha/Presenter}
+
+\project{Jun 2018 - Oct 2018}{AISYWC Website}{Official website of All India Student-YP-WIE Congress 2018.}{https://github.com/shashank-simha/AISYWC}
+
+\project{}{Other Projects}{All my public projects can be found at:}{https://github.com/shashank-simha/}
+%end project section
+
+%achievement section
+\cvsection{Achievements}
+
+\customitems{Technical}{Best Website Award - AISYWC'18}{}{}{}{}{}{}{}
+
+\customitems{Others}{Secured state wise 2nd rank in National Means cum Merit Scholarship Exam (2011)}{}{}{}{}{}{}{}
+%end achievement section
+
+%interest section
+\cvsection{Interests}
+
+\customitems{Extra-curricular}{Cadet - National Cadet Corps (NCC)}{State level Swimmer}{}{}{}{}{}{}
+
+\customitems{Hobbies}{Reading Novels}{Developing DIY projects}{}{}{}{}{}{}
+%end interest section
+
+% \end{changemargin}
+
+\end{document}
